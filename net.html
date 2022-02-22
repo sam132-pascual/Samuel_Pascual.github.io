@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Netflix correlation in Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Overview</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="generic.html">Netflix correlation in Python</a></li>
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/sam132-pascual/Portfolio_Projects/tree/main/PythonCorrelationProject" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+								
+									<h1>Data Analyst Portfolio Project<br />
+										Netflix correlation in Python</h1>
+								</header>
+                                <a href="https://github.com/sam132-pascual/Portfolio_Projects/tree/main/PythonCorrelationProject" class="logo">See the project on github</a>								
+								<h2>The Data</h2>
+								<p>The dataset is called Netflix_data. Contributors looked at over 7.500 of movies in Netflix with a variety of searches like name, rating, genre, year etc.</p>
+								<div class="image main"><img src="images/Nt1.jpg"  /></div>
+								<h2>Enviroment</h2>
+								<h3>libraries</h3>
+								<div class="image main"><img src="images/Nt2.jpg"  /></div>
+
+                                <h2>EDA(Exploratory Data Analysis)</h2>
+								<h3>General Info:</h3>
+                                <div class="image main"><img src="images/Nt3.jpg"  /></div>
+                                <h3>Nulls</h3>
+                                <div class="image main"><img src="images/Nt4.jpg"  /></div>
+                                <div class="image main"><img src="images/Nt5.jpg"  /></div>
+                                <h2>Data Cleaning and Wrangling</h2>
+                                <h3>Clean Nans of Numeric Columns</h3>
+                                <p>In this case I am going to change our nans of the numerical columns by their average because I think that in this case it is a good option.
+                                    For this I have created a function.</p>
+                                <div class="image main"><img src="images/Nt6.jpg"  /></div>
+                                <h3>Clean Nulls of Categorical Columns</h3>
+                                <p>We have practically no nans in the categorical variables so I think it is best to eliminate them.</p>
+                                <h3>Transform relased column</h3>
+                                <p>Let's transform the relased column to keep only the year, month and day.</p>
+                                <div class="image main"><img src="images/Nt7.jpg"  /></div>
+                                <h3>Delete Duplicates</h3>
+                                <p>We can see that we have duplicate titles but we do not know if it is only the title so we will check if all the rows are duplicated and if so we will eliminate them.</p>
+                                <div class="image main"><img src="images/Nt8.jpg"  /></div>
+                                <h2>correlations</h2>
+                                <p> I believe that the more money they spend, the more money they will benefit from.(budget high correlation) and Company high correlation with benefit too</p>
+                                <h3>Budget and Gross correlation</h3>
+                                <p>Let's start by looking at the first thing</p>
+                                <div class="image main"><img src="images/Nt9.jpg"  /></div>
+                                <p>We can see from the line that they are correlated but now we will see how much</p>
+                                <div class="image main"><img src="images/Nt10.jpg"  /></div>
+                                <div class="image main"><img src="images/Nt11.jpg"  /></div>
+                                <p>High correlation between budget and gross We was right</p>
+                                <h3>Gross and Company correlation</h3>
+                                <p>The first thing to do is to change the objet columns to categorical columns.</p>
+                                <div class="image main"><img src="images/Nt12.jpg"  /></div>
+                                <p>Let's start looking correlation</p>
+                                <div class="image main"><img src="images/Nt13.jpg"  /></div>
+                                <div class="image main"><img src="images/Nt14.jpg"  /></div>
+                                <p>We was wrong because we can see that our hypothesis that the company played an important role in the collection has not been the case.
+                                </p>
+                                <p>Votes and Budget have the highest correlation to gross earnings.</p>
+							</section>
+
+
+					</div>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Netflix correlation in Python</li><li>Design: <a href="https://html5up.net">Samuel Pascual</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

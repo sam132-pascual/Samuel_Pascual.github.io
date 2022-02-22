@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Cleaning in SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Overview</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="generic.html">Data Cleaning in SQL</a></li>
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/sam132-pascual/Portfolio_Projects/tree/main/Sql_Data_Cleaning" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+								
+									<h1>Data Analyst Portfolio Project<br />
+										Data Cleaning in SQL</h1>
+								</header>
+                                <a href="https://github.com/sam132-pascual/Portfolio_Projects/tree/main/Sql_Data_Cleaning" class="logo">See the project on github</a>
+								<h2>The Data</h2>
+								<p>The dataset is called NashvilleHousingData. Contributors looked at over 56.000 sales of houses in the region of Nashville with a variety of searches like Property Adrees, SaleDate, Year built etc.</p>
+								<div class="image main"><img src="images/Dtcln1.jpg"  /></div>
+								<h2>Data Cleansing & Transformation (SQL)</h2>
+								
+								
+								<h3>Standardize Date Format:</h3>
+                                
+								<div class="image main"><img src="images/Dtcln2.jpg"  /></div>
+								<h3>Work with repetitions:</h3>
+                                <p>There are addresses with null but in the data there are repetitions of ParcelID and the addresses are the same so I will try to fill in as many addresses as possible using that.</p>
+								<div class="image main"><img src="images/Dtcln3.jpg"  /></div>
+								<h3>Breaking out Address into individual columns(Address, City, State):</h3>
+                                
+								<div class="image main"><img src="images/Dtcln4.jpg"  /></div>
+                                <p>Let's do the same with OwnerAdress</p>
+                                <div class="image main"><img src="images/Dtcln5.jpg"  /></div>
+								<h3>Change Y and N to Yes and No in 'Sold as Vacant' field:</h3>
+                                
+								<div class="image main"><img src="images/Dtcln6.jpg"  /></div>
+								<h3>Delete duplicates with CTE and delete unused columns:</h3>
+								
+								<div class="image main"><img src="images/Dtcln7.jpg"  /></div>
+								<h3>Work with nulls values:</h3>
+								
+                                <div class="image main"><img src="images/Dtcln8.jpg"  /></div>
+                                <h3>Sales Management Dashboard</h3>
+                                <p>The finished Nashville Houses dashboard with one page with works as a dashboard and overview, with other page focused on combining tables for necessary details and visualizations to show owner details over time. </p>
+
+								<h4><b>Click the picture to to open the dashboard and try it out!</b></h4>
+								<div class="image main"> <a href="https://app.powerbi.com/view?r=eyJrIjoiODQ5YjljMGYtMmJlZS00YjQyLWEzOGUtNGE5NjRmY2FkNmM4IiwidCI6IjRiMjk0MmQwLTUxNDEtNGVjZS1iYjcyLTE5MjVhZGIwMjczOSIsImMiOjl9"> <img src="images/Dtcln9.jpg"  /></a>  </div>
+								
+							</section>
+
+
+					</div>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Data Cleaning in SQL</li><li>Design: <a href="https://html5up.net">Samuel Pascual</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
